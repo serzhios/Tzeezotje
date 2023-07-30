@@ -1,0 +1,20 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+
+body {
+    margin: 0;
+    width: 1920px;
+    .wrapper {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        display: grid;
+        grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+        grid-template-areas: "header" "main" "footer";
+    }
+}
