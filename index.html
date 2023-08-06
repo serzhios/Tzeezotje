@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TZEEZOTLE</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        <header class="header">
+    <div class="mobile">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#link">À la carte</a></li>
+                <li><a href="#link">Wijnkaart</a></li>
+                <li><a href="#link">Lunchmenu</a></li>
+                <li><a href="#link">Contact</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="nav">
+        <div class="nav-logo">
+            <a href="/">
+                <img src="../../../img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-menu">
+            <ul class="list">
+                <li class="link"><a href="#À_la_carte">À la carte</a></li>
+                <li class="link"><a href="#Wijnkaart">Wijnkaart</a></li>
+                <li class="link"><a href="#Lunchmenu">Lunchmenu</a></li>
+                <li class="link"><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-tel">
+            <img src="../../../img/svg/call-calling.svg" alt="call">
+            <a href="tel: +32 9 282 57 25">+32 9 282 57 25</a>
+        </div>
+    </div>
+    <div class="booking">
+        <div class="booking-subtitle">
+            <h2>OPEN EVERYDAY
+                6AM - 9PM</h2>
+        </div>
+        <div class="booking-title">
+            <h1>A bad day with lunch is better than<br> a good day without it.</h1>
+        </div>
+        <div class="booking-social">
+            <button id="button" class="button">Reserve a table</button>
+            <div class="booking-list">
+                <div class="item">
+                    <a href="/"> Fb</a>
+                </div>
+                <div class="item">
+                    <a href="/">Ig</a>
+                </div>
+                <div class="item">
+                    <a href="/">Tw </a>
+                </div>
+                <div class="item">
+                    <a href="/">Yt</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <form name="form" action="../../../send.php" method="POST" id="ajax_message" class="ajax_message">
+        <span id="close">&times;</span>
+        <h2>have any questions?</h2>
+        <p>
+        <div class="titles">Name</div> <input class="input" id="name" name="name" type="text"
+            placeholder="Input your name" required />
+        </p>
+
+        <p>
+        <div class="titles">Email</div> <input class="input" id="email" name="email" type="text"
+            placeholder="Input your email" required />
+        </p>
+
+        <p>
+        <div class="titles">Speciale Request</div>
+        </p>
+
+        <p>
+        <div class="titles"></div><textarea name="message" id="message" cols="22" rows="5"
+            placeholder="Input your special request" /></textarea>
+        </p>
+        <p><input id="submit" value="Send" type="submit" /></p>
+    </form>
+    <div id="form_message"></div>
+
+</header>
+        <main class="main">
+
+            <section class="calendar" id="Wijnkaart">
+                <div class="calendar-list">
+                    <div class="calendar-item">
+                        <h3>Woensdag 12/01</h3>
+                        <div class="text">
+                            <p>Salade met Serrano</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Steak Tartaar</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="calendar-item">
+                        <h3>Donderdag 13/01</h3>
+                        <div class="text">
+                            <p>Toast Roquefort</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Penne met Kip en Prei</p>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="calendar-item">
+                        <h3>Vrijdag 14/01
+                        </h3>
+                        <div class="text">
+                            <p>Verrassing van de Chef</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Penne met Kip en Prei</p>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="calendar-item">
+                        <h3>Vrijdag 15/01
+                        </h3>
+                        <div class="text">
+                            <p>Verrassing van de Chef</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Penne met Kip en Prei</p>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="calendar-item">
+                        <h3>Vrijdag 16/01
+                        </h3>
+                        <div class="text">
+                            <p>Verrassing van de Chef</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Penne met Kip en Prei </p>
+                        </div>
+                        <hr>
+
+                    </div>
+                </div>
+                <figure class="calendar-image">
+                    <img src="../img/imgMain1.png" alt="imgMain1">
+                    <div class="sqare"></div>
+                    <img src="../img/imgMain2.png" alt="imgMain2">
+                </figure>
+            </section>
+            <section class="slider">
+
+                <div class="swiper ">
+                    <div class="swiper-container" id="swiper-container">
+
+                        <!-- swiper slides -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../img/svg/“.svg" alt="">
+                                <h2>Goede service, lekker eten, toffe ambiance</h2>
+                                <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                    et accusam
+                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                                <p class="title">
+                                    ALAIN HEYNDRICKX
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/svg/“.svg" alt="">
+                                <h2>Go service, lekker eten, toffe ambiance</h2>
+                                <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                    et accusam
+                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                                <p class="title">
+                                    ALAIN HEYNDRICKX
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/svg/“.svg" alt="">
+                                <h2>Go rvice, lekker eten, toffe ambiance</h2>
+                                <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                    et accusam
+                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                                <p class="title">
+                                    ALAIN HEYNDRICKX
+                                </p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+        
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/vendor.js"></script>
+
+
+</body>
+
+</html>
