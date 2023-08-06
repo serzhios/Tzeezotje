@@ -1,4 +1,20 @@
 <header class="header">
+    <div class="mobile">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#link">À la carte</a></li>
+                <li><a href="#link">Wijnkaart</a></li>
+                <li><a href="#link">Lunchmenu</a></li>
+                <li><a href="#link">Contact</a></li>
+
+            </ul>
+        </nav>
+    </div>
     <div class="nav">
         <div class="nav-logo">
             <a href="/">
@@ -7,10 +23,10 @@
         </div>
         <div class="nav-menu">
             <ul class="list">
-                <li class="link"><a href="/À la carte">À la carte</a></li>
-                <li class="link"><a href="/Wijnkaart">Wijnkaart</a></li>
-                <li class="link"><a href="/Lunchmenu">Lunchmenu</a></li>
-                <li class="link"><a href="/Contact">Contact</a></li>
+                <li class="link"><a href="#À_la_carte">À la carte</a></li>
+                <li class="link"><a href="#Wijnkaart">Wijnkaart</a></li>
+                <li class="link"><a href="#Lunchmenu">Lunchmenu</a></li>
+                <li class="link"><a href="#Contact">Contact</a></li>
             </ul>
         </div>
         <div class="nav-tel">
@@ -45,14 +61,17 @@
             </div>
         </div>
     </div>
-    <form name="form" action="mail" method="post" id="form_message" id="form_message">
+    <form name="form" action="../../../send.php" method="POST" id="form_message" class="form_message">
+        <span id="close">&times;</span>
         <h2>have any questions?</h2>
         <p>
-        <div class="titles">Name</div> <input class="input" name="name" type="text" placeholder="Input your name" />
+        <div class="titles">Name</div> <input class="input" name="name" type="text" placeholder="Input your name"
+            required />
         </p>
 
         <p>
-        <div class="titles">Email</div> <input class="input" name="email" type="text" placeholder="Input your email" />
+        <div class="titles">Email</div> <input class="input" name="email" type="text" placeholder="Input your email"
+            required />
         </p>
 
         <p>
@@ -63,8 +82,8 @@
         <div class="titles"></div><textarea name="message" cols="22" rows="5"
             placeholder="Input your special request" /></textarea>
         </p>
-        <p><input id="submit" value="Отправить" type="submit" /></p>
-    </form>>
+        <p><input id="submit" value="Send" type="submit" /></p>
+    </form>
 
 
 </header>

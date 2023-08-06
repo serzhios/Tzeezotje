@@ -7,8 +7,8 @@
     <title>gulp-scss-starter</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
@@ -30,17 +30,159 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <div class="wrapper">
+    <section class="wrapper">
         @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-    </div>
+        <main class="main">
 
-    <script src="js/main.js"></script>
-    <script src="js/vendor.js"></script>
+            <section class="calendar" id="Wijnkaart">
+                <div class="calendar-list">
+                    <div class="calendar-item">
+                        <h3>Woensdag 12/01</h3>
+                        <div class="text">
+                            <p>Salade met Serrano</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Steak Tartaar</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="calendar-item">
+                        <h3>Donderdag 13/01</h3>
+                        <div class="text">
+                            <p>Toast Roquefort</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Penne met Kip en Prei</p>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="calendar-item">
+                        <h3>Vrijdag 14/01
+                        </h3>
+                        <div class="text">
+                            <p>Verrassing van de Chef</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Penne met Kip en Prei</p>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="calendar-item">
+                        <h3>Vrijdag 15/01
+                        </h3>
+                        <div class="text">
+                            <p>Verrassing van de Chef</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Penne met Kip en Prei</p>
+                        </div>
+                        <hr>
+
+                    </div>
+                    <div class="calendar-item">
+                        <h3>Vrijdag 16/01
+                        </h3>
+                        <div class="text">
+                            <p>Verrassing van de Chef</p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p class="circle"></p>
+                            <p>Penne met Kip en Prei </p>
+                        </div>
+                        <hr>
+
+                    </div>
+                </div>
+                <figure class="calendar-image">
+                    <img src="../img/imgMain1.png" alt="imgMain1">
+                    <div class="sqare"></div>
+                    <img src="../img/imgMain2.png" alt="imgMain2">
+                </figure>
+            </section>
+            <section class="slider">
+
+                <div class="swiper ">
+                    <div class="swiper-container" id="swiper-container">
+
+                        <!-- swiper slides -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../img/svg/“.svg" alt="">
+                                <h2>Goede service, lekker eten, toffe ambiance</h2>
+                                <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                    et accusam
+                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                                <p class="title">
+                                    ALAIN HEYNDRICKX
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/svg/“.svg" alt="">
+                                <h2>Go service, lekker eten, toffe ambiance</h2>
+                                <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                    et accusam
+                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                                <p class="title">
+                                    ALAIN HEYNDRICKX
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../img/svg/“.svg" alt="">
+                                <h2>Go rvice, lekker eten, toffe ambiance</h2>
+                                <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    nonumy eirmod
+                                    tempor
+                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                    et accusam
+                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                                </p>
+                                <p class="title">
+                                    ALAIN HEYNDRICKX
+                                </p>
+                            </div>
+
+
+
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+        @@include("../blocks/modules/footer/footer.html")
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/vendor.js"></script>
+
+
 </body>
 
 </html>
