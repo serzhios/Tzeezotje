@@ -71,6 +71,7 @@
     "yargs": "^15.4.1"
   },
   "dependencies": {
+    "gulp-connect-php": "^1.0.3",
     "gulp-task-loader": "^1.5.0",
     "gulp-tasks": "0.0.2",
     "jquery": "^3.7.0",

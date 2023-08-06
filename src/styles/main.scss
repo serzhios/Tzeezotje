@@ -381,6 +381,25 @@ body {
                 .slider {
                     display: flex;
                     width: 768px;
+                    height: 655px;
+                    .swiper {
+                        width: 480px;
+                        height: 525px;
+                        .swiper-container {
+                            height: 500px;
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    height: 500px;
+                                    .text {
+                                        width: 350px;
+                                    }
+                                    .title {
+                                        margin-top: 123px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
